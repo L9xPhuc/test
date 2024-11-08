@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm Game Mới</title>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js"></script>
+</head>
+<body>
+  <h1>Thêm Game Mới</h1>
+  <form id="addGameForm">
+    <label for="name">Tên Game:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="imageUrl">Link Hình Ảnh:</label><br>
+    <input type="text" id="imageUrl" name="imageUrl" required><br><br>
+
+    <label for="description">Mô Tả:</label><br>
+    <textarea id="description" name="description" required></textarea><br><br>
+
+    <label for="minSystemRequirements">Cấu Hình Tối Thiểu:</label><br>
+    <input type="text" id="minSystemRequirements" name="minSystemRequirements" required><br><br>
+
+    <label for="recommendedSystemRequirements">Cấu Hình Yêu Cầu:</label><br>
+    <input type="text" id="recommendedSystemRequirements" name="recommendedSystemRequirements" required><br><br>
+
+    <label for="latestVersionDownloadLink">Link Tải Bản Mới Nhất:</label><br>
+    <input type="text" id="latestVersionDownloadLink" name="latestVersionDownloadLink" required><br><br>
+
+    <label for="oldVersionDownloadLink">Link Tải Bản Cũ:</label><br>
+    <input type="text" id="oldVersionDownloadLink" name="oldVersionDownloadLink" required><br><br>
+
+    <label for="updateLinkOldVersion">Link Cập Nhật Bản Cũ:</label><br>
+    <input type="text" id="updateLinkOldVersion" name="updateLinkOldVersion" required><br><br>
+
+    <label for="releaseDate">Ngày Phát Hành:</label><br>
+    <input type="date" id="releaseDate" name="releaseDate" required><br><br>
+
+    <label for="updateDate">Ngày Cập Nhật:</label><br>
+    <input type="date" id="updateDate" name="updateDate" required><br><br>
+
+    <label for="version">Phiên Bản:</label><br>
+    <input type="text" id="version" name="version" required><br><br>
+
+    <label for="category">Phân Loại:</label><br>
+    <input type="text" id="category" name="category" required><br><br>
+
+    <button type="submit">Thêm Game</button>
+  </form>
+
+  <script src="js/add-game.js" type="module"></script>
+</body>
+</html>
